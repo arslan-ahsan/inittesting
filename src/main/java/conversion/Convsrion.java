@@ -21,7 +21,7 @@ public class Convsrion {
         jaxbMarshaller.marshal(model, System.out);
         jaxbMarshaller.marshal(model, new File("C:\\Users\\Arslan Ahsan\\Desktop\\tiff\\model.xml"));
 */
-         //Unmarshalling
+         //Unmarshalling New
         Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
         Model unmarshalModel = (Model) jaxbUnmarshaller.unmarshal( new File("C:\\Users\\Arslan Ahsan\\Desktop\\tiff\\model.xml") );
         System.out.println(unmarshalModel.toString());
